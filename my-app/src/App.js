@@ -1,15 +1,13 @@
-import React from 'react';
-
-import "./assets/css/global.css";
-import Logo from './components/Logo';
+import React from "react";
+import Main from "./components/Main";
 
 const App = () => {
   return (
-    <div className='App'> 
-      <h1> learn with me   </h1>
-      <Logo />
-       </div>
-  )
-}
+    <div>
+      {" "}
+      <Main />
+    </div>
+  );
+};
 
-export default App
+export default App;
