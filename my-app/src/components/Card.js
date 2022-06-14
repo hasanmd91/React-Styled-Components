@@ -1,23 +1,32 @@
 import React from "react";
 
 import nerdimage from "../assets/Images/illustration.png";
+import { Buttoncontainer, Cardcontainer } from "./styles/Container.styles";
+import { Contentcontainer } from "./styles/Container.styles";
+import Button from "./Button";
+import { H1, P, Tag, Image } from "./styles/Elements.styles";
 
 const Card = () => {
   return (
-    <div>
-      <div>
-        <h1> React styled components</h1>
-        <p>
+    <Cardcontainer>
+      <Contentcontainer>
+        <Tag>EXCLUSIVE </Tag>
+        <H1> React styled components</H1>
+        <P>
           Styled Components is a library that, through a set of practices,
           solves complex CSS problems.
-        </p>
-        <button> watch now</button>
-        <button> Github Repo</button>
-      </div>
-      <div>
-        <img src={nerdimage} alt="nothing" />
-      </div>
-    </div>
+        </P>
+        <Buttoncontainer>
+          <Button
+            link="https://www.facebook.com/profile.php?id=100069593825824"
+            text=" watch now"
+          />
+          <Button link="https://github.com/hasanmd91" text=" Github Repo" />
+        </Buttoncontainer>
+      </Contentcontainer>
+
+      <Image src={nerdimage} text="nerimage" width="300px" />
+    </Cardcontainer>
   );
 };
 
